@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         btnProducts.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //Log.i(Settings.INFO,"Productos");
+
+                //Intent Para cambiar de pantalla
                 Intent i = new Intent(MainActivity.this,
                         ProductListActivity.class);
                 startActivity(i);
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 //Log.i(Settings.INFO,"About us");
                 Intent i = new Intent(MainActivity.this,
-                        ProductListActivity.class);
+                        AboutUsActivity.class);
                 startActivity(i);
             }
         });
